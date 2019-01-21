@@ -1,0 +1,44 @@
+.block {
+  min-height: 100vh;
+  width: 100%;
+  padding: $space-vertical-medium $space-horizontal-normal;
+  box-sizing: border-box;
+
+  &__wraper {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: ($space-vertical-very-large * 1.5) 0;
+  }
+
+  &--table {
+    background-color: $color-bg-fifth;
+  }
+
+  &--plans {
+    background-image: url("../images/bg-plans.png");
+    background-size: 100% 100%;
+
+    .block__wraper {
+      display: grid;
+      grid-template-areas:
+      'photo nav'
+      'photo info'
+      'photo info';
+      grid-template-columns: 1fr 1fr;
+
+      @media #{$breakpoint-mobile} {
+        margin: 5px;
+        font-size: 10px;
+        grid-template-areas:
+          'nav nav'
+          'photo photo'
+          'info info';
+      }
+    }
+  }
+
+  &--contact {
+    background-image: url("../images/bg-contact.png");
+    background-size: 100% 100%;
+  }
+}

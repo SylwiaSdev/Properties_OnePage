@@ -1,0 +1,49 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__option {
+    display: flex;
+    max-width: 165px;
+    margin-bottom: $space-vertical-normal;
+
+    &--title {
+      background-color: $color-bg-fourth;
+      box-sizing: border-box;
+      color: $color-text-second;
+      height: 40px;
+      width: 135px;
+      line-height: 40px;
+      padding-left: $space-horizontal-small;
+
+      @media #{$breakpoint-mobile} {
+        width: 95px;
+        font-size: $font-size-normal;
+      }
+    }
+    .options {
+      display: none;
+      position: absolute;
+      flex-direction: column;
+      margin-top: $space-vertical-very-large;
+      background-color: $color-bg-fourth;
+      width: 165px;
+      padding: $space-vertical-normal;
+      box-sizing: border-box;
+      color: $color-bg-third;
+
+      @media #{$breakpoint-mobile} {
+        width: 135px;
+      }
+
+      label {
+        padding: 3px 0;
+      }
+    }
+
+  }
+  .show {
+    display: flex;
+  }
+}

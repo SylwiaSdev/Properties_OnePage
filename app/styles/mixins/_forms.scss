@@ -1,0 +1,46 @@
+.form {
+  width: 30%;
+  max-height: 475px;
+  margin-top: $space-vertical-normal * 5;
+
+  @media #{$breakpoint-mobile} {
+    width: 100%;
+    display: none;
+  }
+  textarea {
+    min-height: 250px;
+    font-family: 'Lato', sans-serif;
+  }
+  &__input,
+  &__message {
+    width: 100%;
+    padding: 0 $space-horizontal-small;
+    height: 38px;
+    line-height: $space-vertical-very-large;
+    margin-bottom: ($space-vertical-very-large / 3) * 2;
+    background-color: $color-bg-fifth;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+
+    &--half {
+      width: calc(50% - #{$space-horizontal-small});
+    }
+  }
+  &__message {
+    min-height: 170px;
+  }
+
+  &__checking {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .code {
+      background-color: $color-bg-fifth;
+      text-transform: uppercase;
+      color: $color-text-third;
+      padding: $space-vertical-small;
+      width: 45%;
+    }
+  }
+}

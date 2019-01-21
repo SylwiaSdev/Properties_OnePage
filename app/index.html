@@ -1,0 +1,223 @@
+<!doctype html>
+<html class="no-js" lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Nieruchomości">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+  <title>Zadanie</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="scripts/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav class="nav">
+      <a class="nav__title" href="#investment">Inwestycja</a>
+      <a class="nav__title" href="#table">Dostępność</a>
+      <a class="nav__title" href="#plans">Rzuty mieszkań</a>
+      <a class="nav__title" href="#contact">Kontakt</a>
+    </nav>
+    <div class="dropdown">
+      <div class="btn--square btn--arrow-down btn--drop-down"></div>
+      <div class="dropdown__content">
+        <a href="#">Inwestycja</a>
+        <a href="#table">Dostępność</a>
+        <a href="#plans">Rzuty mieszkań</a>
+        <a href="#contact">Kontakt</a>
+      </div>
+    </div>
+    <section id="investment">
+      <div class="slider"></div>
+      <span class="slider__arrow slider__arrow--left"><i class="fas fa-arrow-left"></i></span>
+      <span class="slider__arrow slider__arrow--right"><i class="fas fa-arrow-right"></i></span>
+    </div>
+  </section>
+  <section id="table" class="block block--table">
+    <div class="block__wraper">
+      <div class="filter">
+        <div class="filter__option" id="tier-filter" aplied-filters="">
+          <div class="filter__option--title">kondygnacja</div>
+          <div class="btn btn--square btn--arrow-down tier"></div>
+          <div class="options tier-options">
+            <label><input type="checkbox" class="filter__checkbox" value="parter">parter</label>
+            <label><input type="checkbox" class="filter__checkbox" value="piętro">piętro</label>
+          </div>
+        </div>
+        <div class="filter__option" id="garden-filter" aplied-filters="">
+          <div class="filter__option--title">ogródek/strych</div>
+          <div class="btn btn--square btn--arrow-down garden"></div>
+          <div class="options garden-options">
+            <label><input type="checkbox" class="filter__checkbox" value="ogródek">ogródek</label>
+            <label><input type="checkbox" class="filter__checkbox" value="strych">strych</label>
+          </div>
+        </div>
+        <div class="filter__option" id="state-filter" aplied-filters="">
+          <div class="filter__option--title">status</div>
+          <div class="btn btn--square btn--arrow-down state"></div>
+          <div class="options state-options">
+            <label><input type="checkbox" class="filter__checkbox" value="wolny">wolny</label>
+            <label><input type="checkbox" class="filter__checkbox" value="zarezerwowany">rezerwacja</label>
+            <label><input type="checkbox" class="filter__checkbox" value="sprzedny">sprzedny</label>
+          </div>
+        </div>
+        <div class="filter__option" id="price-filter" aplied-filters="">
+          <div class="filter__option--title">cena</div>
+          <div class="btn btn--square btn--arrow-down price"></div>
+          <div class="options price-options">
+            <label><input type="checkbox" class="filter__checkbox" value="200000-260000">200000-260000 zł</label>
+            <label><input type="checkbox" class="filter__checkbox" value="260001-400000">260001-400000 zł</label>
+          </div>
+        </div>
+        <div id="filter-list" class="btn btn--filter">FILTROWANIE</div>
+      </div>
+      <div class="container">
+        <table id="flats">
+          <thead>
+            <tr>
+              <th>nr budynku <br> mieszkania</th>
+              <th>kondygnacja</th>
+              <th>powierzchnia <br> użytkowa</th>
+              <th>powierzchnia <br> ogródka/strychu</th>
+              <th>cena <br> brutto</th>
+              <th>plan</th>
+              <th>status</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="btn__holder"></div>
+    </div>
+  </section>
+  <section id="plans" class="block block--plans">
+    <div class="block__wraper">
+      <div class="buttoms__container">
+        <div class="buttoms__holder">
+          <div class="btn btn--submit btn--plans ground-l">Parter lewy</div>
+          <div class="btn btn--submit btn--plans ground-r">Parter prawy</div>
+        </div>
+        <div class="buttoms__holder">
+          <div class="btn btn--submit btn--plans floor-l">Piętro lewe</div>
+          <div class="btn btn--submit btn--plans floor-r">Piętro prawe</div>
+        </div>
+      </div>
+      <div class="plan-foto"><img class="plan ground" src="./images/parter.png"></div>
+      <div class="plan__info">
+        <div class="plan__info__summary">
+          <span>Powierzchnia użytkowa</span>
+          <span>64 m<sup>2</sup></span>
+        </div>
+        <ul>
+          <li>
+            <div class="plan__info__item--id">1</div>
+            <div class="plan__info__item--name">Salon z aneksem kuchennym</div>
+            <div class="plan__info__item--space">25m<sup>2</sup></div>
+          </li>
+          <li>
+            <div class="plan__info__item--id">2</div>
+            <div class="plan__info__item--name">Łazienka</div>
+            <div class="plan__info__item--space">6m<sup>2</sup></div>
+          </li>
+          <li>
+            <div class="plan__info__item--id">3</div>
+            <div class="plan__info__item--name">Pokój</div>
+            <div class="plan__info__item--space">12m<sup>2</sup></div>
+          </li>
+          <li>
+            <div class="plan__info__item--id">4</div>
+            <div class="plan__info__item--name">Pokój</div>
+            <div class="plan__info__item--space">10m<sup>2</sup></div>
+          </li>
+          <li>
+            <div class="plan__info__item--id">5</div>
+            <div class="plan__info__item--name">Garderoba</div>
+            <div class="plan__info__item--space">2m<sup>2</sup></div>
+          </li>
+          <li>
+            <div class="plan__info__item--id">6</div>
+            <div class="plan__info__item--name">Hol</div>
+            <div class="plan__info__item--space">5m<sup>2</sup></div>
+          </li>
+          <li>
+            <div class="plan__info__item--id">7</div>
+            <div class="plan__info__item--name">Przedpokój</div>
+            <div class="plan__info__item--space">4m<sup>2</sup></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="block block--contact">
+    <div class="block__wraper">
+      <div class="contact">
+        <div class="info">
+          <div class="info__header">
+            <div class="info__icon"></div>
+            <div class="info__title">Kontakt</div>
+          </div>
+          <div class="info__logo"></div>
+          <div class="info__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Fusce vehicula lacus at placerat commodo.
+            Ut sit amet urna id enim suscipit elementum sed eu leo.
+            Integer rutrum sapien quam, sodales vehicula erat volutpat elementum.
+          </div>
+        </div>
+        <div class="details">
+          <p>
+            <span>Lorem Ipsum Sp. z.o.o</span>
+            <span> 32-020 Kraków, Floriańska 1/1</span>
+          </p>
+          <p>
+            <span>+48 777 777 777</span>
+            <span>kontakt@kontakt.com.pl</span>
+          </p>
+          <p>
+            <span>KRS: 0000222 333</span>
+            <span>NIP: 679-222-22-22</span>
+            <span>REGON: 123456789</span>
+          </p>
+        </div>
+        <div class="btn btn__more btn--full-width btn--show-form ">więcej
+          <div class="btn btn--square btn--square--form btn--arrow-down"></div>
+        </div>
+        <form class="form">
+          <input class="form__input" type="text" placeholder="Imię i Nazwisko" required>
+          <input class="form__input" type="email" placeholder="E-mail" required>
+          <textarea class="form__message" placeholder="Treść wiadomości" required></textarea>
+          <div class="form__checking">
+            <div class="form__input form__input--half">AXK65GH</div>
+            <input class="form__input form__input--half" type="text" placeholder="Przepisz" required>
+          </div>
+          <input type="submit" class="btn btn--submit btn--full-width" value="Wysłanie formularza"></input>
+        </form>
+      </div>
+    </div>
+    <div class="btn btn__less btn--full-width btn--show-form">Mniej
+      <div class="btn btn--square btn--square--form btn--arrow-up"></div>
+    </div>
+  </section>
+
+  <!-- build:js scripts/vendor.js -->
+  <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/underscore.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/pagination.js"></script>
+  <script src="scripts/filter.js"></script>
+  <script src="scripts/slider.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,33 @@
+.slider {
+  &__arrow {
+    position: absolute;
+    bottom: $space-vertical-very-large * 2;
+    font-size: 20px;
+    cursor: pointer;
+    height: 50px;
+    width: 26px;
+    background-size: 100% 100%;
+
+    &--left {
+      left: $space-horizontal-large * 2;
+      background-image: url('../images/arrow-l.png');
+
+      @media #{$breakpoint-mobile} {
+        left: $space-horizontal-medium;
+      }
+    }
+    &--right {
+      right: $space-horizontal-large * 2;
+      background-image: url('../images/arrow-r.png');
+
+      @media #{$breakpoint-mobile} {
+        right: $space-horizontal-medium;
+      }
+    }
+  }
+
+  &__img {
+    height: calc(100vh - 80px);
+    width: 100%;
+  }
+}

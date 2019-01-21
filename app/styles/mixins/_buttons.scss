@@ -1,0 +1,115 @@
+.btn {
+  cursor: pointer;
+  color: $color-text-main;
+  text-transform: uppercase;
+  border: none;
+
+  &--submit {
+    background-color: $color-bg-third;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    font-family: 'Lato', sans-serif;
+  }
+  &--full-width {
+    width: 100%;
+  }
+  &--filter {
+    background-color: $color-bg-third;
+    width: 360px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+  }
+  &--plans {
+    margin: $space-vertical-medium;
+    width: 250px;
+
+    @media #{$breakpoint-mobile} {
+      margin: $space-vertical-small;
+      width: 100%;
+      font-size: 10px;
+    }
+  }
+  &--square {
+    height: 40px;
+    width: 40px;
+    background-color: $color-bg-second;
+    text-align: center;
+    line-height: 40px;
+    background-size: 100% 100%;
+    &--form{
+      float: right;
+      height: 35px;
+    }
+  }
+  &--arrow-down {
+    background-image: url("../images/arrow-down.png");
+  }
+  &--arrow-up {
+    background-image: url("../images/arrow-up.png");
+  }
+  &--show-form{
+    background-color: $color-bg-second;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 $space-horizontal-medium / 2;
+    box-sizing: border-box;
+    display: none;
+  }
+
+  &--drop-down {
+    display: none;
+
+    @media #{$breakpoint-mobile} {
+      display: block;
+      margin-top: $space-vertical-large;
+      position: absolute;
+      right: $space-horizontal-small;
+    }
+  }
+
+  &__less {
+    display: none;
+
+    @media #{$breakpoint-mobile} {
+      display: none;
+    }
+  }
+
+  &__more {
+    display: none;
+
+    @media #{$breakpoint-mobile} {
+      display: block;
+    }
+  }
+
+  &__pages {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: $color-text-second;
+    background-color: $color-bg-fourth;
+    margin: 0px ($space-horizontal-very-small * 3);
+    font-size: $font-size-medium;
+  }
+
+
+  &__holder {
+    display: flex;
+    justify-content: center;
+    margin-top: $space-vertical-very-large
+  }
+}
+.active {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: $color-bg-second;
+  color: $color-text-main;
+  margin: 0px ($space-horizontal-very-small * 3);
+  font-size: $font-size-medium;
+}

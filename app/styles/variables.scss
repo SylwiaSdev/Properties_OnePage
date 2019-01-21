@@ -1,0 +1,35 @@
+// colors
+$color-main: #60372f;
+$color-text-main: #ffffff;
+$color-text-second: #9fa0a4;
+$color-text-third: #000000;
+$color-bg-second: #00a671;
+$color-bg-third: #54555a;
+$color-bg-fourth: #e5e5e5;
+$color-bg-fifth: #ffffff;
+$color-bg-sixth: #5e382ecc;
+
+
+// fontsize
+$font-size-small: 6px;
+$font-size-normal: $font-size-small * 2;
+$font-size-medium: $font-size-small * 3;
+$font-size-large: $font-size-small * 4;
+
+// vertical spaces
+$space-vertical-small: 5px;
+$space-vertical-normal: $space-vertical-small * 2;
+$space-vertical-medium: $space-vertical-small * 3;
+$space-vertical-large: $space-vertical-small * 4;
+$space-vertical-very-large: $space-vertical-large * 2;
+
+
+// horizontal spaces
+$space-horizontal-very-small: 5px;
+$space-horizontal-small: $space-horizontal-very-small * 2;
+$space-horizontal-normal: $space-horizontal-small * 2;
+$space-horizontal-medium: $space-horizontal-small * 3;
+$space-horizontal-large: $space-horizontal-small * 4;
+
+// breakpoints
+$breakpoint-mobile: "only screen and (max-width : 420px)";

@@ -1,0 +1,17 @@
+.container {
+  overflow-x: scroll;
+  margin-top: $space-vertical-very-large;
+
+  table {
+    width: 100%;
+    color: $color-bg-third;
+
+    td {
+      text-align: center;
+    }
+    a{
+      color: $color-bg-third;
+    }
+  }
+}
+

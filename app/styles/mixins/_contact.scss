@@ -1,0 +1,65 @@
+.contact {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @media #{$breakpoint-mobile} {
+    flex-direction: column;
+  }
+
+  .info {
+    color: $color-text-main;
+    width: 38%;
+
+    @media #{$breakpoint-mobile} {
+      width: 100%;
+    }
+
+    &__header {
+      display: flex;
+      align-items: flex-end;
+    }
+    &__icon {
+      background-image: url("../images/logo_contact.png");
+      background-size: 100% 100%;
+      min-width: 65px;
+      min-height: 50px;
+      margin-right: $space-horizontal-medium;
+    }
+    &__title {
+      font-size: $font-size-medium;
+      text-transform: uppercase;
+      line-height: $space-vertical-medium * 2;
+      border-bottom: 2px solid #26a668;
+      flex: 1;
+    }
+    &__logo {
+      background-image: url("../images/logo_company.png");
+      background-size: 100% 100%;
+      height: 140px;
+      width: 240px;
+      margin: $space-vertical-very-large 0;
+    }
+  }
+
+  .details {
+    color: $color-text-main;
+
+    @media #{$breakpoint-mobile} {
+      margin-bottom: $space-vertical-normal;
+    }
+
+    p {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: $space-vertical-medium;
+      position: relative;
+      top: 210px;
+
+      @media #{$breakpoint-mobile} {
+        position: inherit;
+      }
+    }
+  }
+}

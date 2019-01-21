@@ -1,0 +1,53 @@
+.buttoms__container {
+  grid-area: nav;
+}
+.buttoms__holder {
+  display: flex;
+}
+.plan-foto {
+  grid-area: photo;
+  img {
+    width: 100%;
+  }
+}
+.plan__info {
+  grid-area: info;
+}
+
+.plan {
+  &__info {
+    padding: $space-vertical-large;
+    background-color: $color-bg-sixth;
+    color: $color-text-main;
+    margin: $space-vertical-medium;
+
+    &__summary {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: $space-vertical-medium * 2;
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+      li {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $space-vertical-normal;
+
+        .plan__info__item--id {
+          width: 25px;
+          height: 25px;
+          border-radius: 25px;
+          background-color: $color-bg-second;
+          line-height: 25px;
+          text-align: center;
+        }
+        .plan__info__item--name {
+          flex: 1;
+          padding: 0 $space-horizontal-normal;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
